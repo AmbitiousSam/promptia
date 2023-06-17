@@ -32,7 +32,6 @@ const handler = NextAuth({
           await User.create({
             username: profile.name.replace(" ", "").toLowerCase(),
             email: profile.email,
-            password: profile.password,
             image: profile.picture,
           });
         }
