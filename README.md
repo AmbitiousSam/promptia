@@ -12,4 +12,5 @@ yarn dev
 pnpm dev
 ```
 
-Deployed on [Promptia](https://promptia-lklkw39x5-ambitioussam.vercel.app/)
+> Deployed on Vercel
+> Link to Preview the site [Promptia](https://promptia-lklkw39x5-ambitioussam.vercel.app/)
