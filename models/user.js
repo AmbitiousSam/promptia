@@ -5,8 +5,8 @@ const UserSchema = new Schema({
     type: String,
     required: [true, "Username is required"],
     match: [
-      /^(?=.{6,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/,
-      "Username invalid, it should contain 6-20 alphanumeric letters and be unique!",
+      /^(?=.{6,20}$)(?![_. ])(?!.*[_. ]{2})[a-zA-Z0-9._ ]+(?<![_. ])$/,
+      "Username invalid, it should contain 6-20 alphanumeric letters, spaces, periods, or underscores, and be unique!",
     ],
   },
   email: {
@@ -18,7 +18,6 @@ const UserSchema = new Schema({
     type: String,
   },
 });
-
 
 const User = models.User || model("User", UserSchema);
 
